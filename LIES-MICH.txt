@@ -1,0 +1,47 @@
+Repetītiō – Latein lernen (Version für Netlify)
+=================================================
+
+WICHTIG: Damit der Lernstand auf allen Geräten gleich ist, braucht Netlify eine kleine
+Sync-Funktion (Datei netlify/functions/sync.mjs). Die richtet Netlify NUR ein, wenn du die Seite
+über GitHub (oder die Netlify CLI) veröffentlichst – NICHT per Drag-and-drop auf netlify.com/drop.
+Darum hat der Abgleich bisher nicht funktioniert.
+
+SO BRINGST DU DIE SEITE ONLINE (über GitHub, ohne Terminal)
+1. Entpacke die ZIP-Datei. Du bekommst den Ordner „repetitio-netlify“.
+2. Erstelle ein kostenloses Konto auf github.com.
+3. Oben rechts „+“ -> „New repository“. Name z. B. „repetitio“, „Private“ auswählen,
+   „Create repository“ klicken.
+4. Auf der neuen Seite auf „uploading an existing file“ klicken.
+5. Öffne den Ordner „repetitio-netlify“ und zieh seinen INHALT (alle Dateien UND den Ordner
+   „netlify“) in das Feld. Prüfe, dass in der Liste „netlify/functions/sync.mjs“ auftaucht.
+   Dann unten „Commit changes“.
+6. Auf app.netlify.com: „Add new project“ -> „Import an existing project“ -> „GitHub“.
+   Netlify den Zugriff erlauben und dein Repository „repetitio“ auswählen.
+   Die Einstellungen so lassen und „Deploy“ klicken.
+7. Nach ein bis zwei Minuten ist die Seite unter https://name.netlify.app online.
+   Unter „Logs & metrics -> Functions“ (bzw. „Functions“) sollte jetzt „sync“ stehen.
+
+Tipp: Statt eines neuen Projekts kannst du auch dein bisheriges Netlify-Projekt nehmen:
+Projekteinstellungen -> „Build & deploy“ -> „Link repository“. Dann bleibt deine Adresse gleich
+(und damit auch dein Lernstand im Browser).
+
+Später aktualisieren: Geänderte Dateien wieder im GitHub-Repository hochladen
+(„Add file“ -> „Upload files“). Netlify veröffentlicht automatisch neu.
+
+ALS APP AUFS HANDY
+- iPhone (Safari): Teilen-Symbol -> „Zum Home-Bildschirm“.
+- Android (Chrome): Menü (drei Punkte) -> „App installieren“ oder „Zum Startbildschirm hinzufügen“.
+
+GERÄTE VERBINDEN
+Startseite -> Einstellungen -> „Geräte verbinden“.
+- Auf dem Gerät mit dem meisten Fortschritt „Sync-Code erstellen“.
+- Auf den anderen Geräten denselben Code eingeben -> „Verbinden“.
+Danach gleichen sich alle Geräte automatisch ab: beim Öffnen, beim Lernen und jede Minute.
+Dein Lernstand liegt dann in deinem eigenen Netlify-Projekt (Netlify Blobs).
+
+DATENSCHUTZ
+Ohne Sync bleibt dein Lernstand nur im Browser deines Geräts. Mit Sync liegt er zusätzlich in
+deinem Netlify-Projekt, erreichbar nur mit deinem Sync-Code – behandle ihn wie ein Passwort.
+
+WAS IN DIESER VERSION FEHLT
+„Von Claude prüfen lassen“ und „Frage zur Lektion“ gibt es nur in der Claude-Version.
